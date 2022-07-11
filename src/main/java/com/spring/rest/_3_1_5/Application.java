@@ -21,11 +21,11 @@ public class Application {
         transmitter.addUser(user);
 
         //Изменение пользователя
-        User updUser = new User(3L, "Thomas", "Shelby", (byte) 25);
-        transmitter.updateUser(updUser);
+        User changedUser = new User(3L, "Thomas", "Shelby", (byte) 25);
+        transmitter.updateUser(changedUser);
 
         //Удаление пользователя
-        transmitter.deleteUser(updUser,3L);
+        transmitter.deleteUser(changedUser,3L);
 
         //Вывод результирующей строки
         System.out.println(transmitter.getSb());
